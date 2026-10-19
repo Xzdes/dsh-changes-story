@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- The story window scrolls when the story is long (flex `min-height: 0` fix — the body was clipped instead of scrollable) and no longer scrolls the chat behind it.
+
 ## 1.0.0
 
 Initial release: plain-language change stories for DeepSeek Harness (tested on DSH 0.2.1-rc.2).
