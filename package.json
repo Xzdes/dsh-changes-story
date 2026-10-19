@@ -1,6 +1,6 @@
 {
   "name": "dsh-changes-story",
-  "version": "0.3.3",
+  "version": "1.0.0",
   "description": "After each completed turn, a separate window explains in plain beginner-friendly words what changed in which files and why",
   "type": "module",
   "main": "lib/index.js",
@@ -36,6 +36,7 @@
     "lib",
     "locale",
     "cordis.patch.yml",
+    "CHANGELOG.md",
     "icon.svg",
     "README.md",
     "LICENSE"
