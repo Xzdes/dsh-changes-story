@@ -1,0 +1,61 @@
+{
+  "name": "dsh-changes-story",
+  "version": "0.1.0",
+  "description": "After each completed turn, a separate window explains in plain beginner-friendly words what changed in which files and why",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "changes",
+    "summary",
+    "beginner"
+  ],
+  "author": "xzdes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzdes/dsh-changes-story.git"
+  },
+  "homepage": "https://github.com/xzdes/dsh-changes-story#readme",
+  "bugs": "https://github.com/xzdes/dsh-changes-story/issues",
+  "dependencies": {
+    "@deepseek-ai/schemastery": "~3.18.4"
+  }
+}

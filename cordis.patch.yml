@@ -1,0 +1,5 @@
+# Bundle patch layer for dsh-changes-story.
+# The single plugin row is inserted with the `insert` list.
+- insert:
+    - id: changes-story
+      name: dsh-changes-story
