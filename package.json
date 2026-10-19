@@ -1,6 +1,6 @@
 {
   "name": "dsh-changes-story",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "After each completed turn, a separate window explains in plain beginner-friendly words what changed in which files and why",
   "type": "module",
   "main": "lib/index.js",
